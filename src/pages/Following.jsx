@@ -113,7 +113,7 @@ const Following = () => {
 
   const [isGrid, setIsGrid] = useState(true);
 
-  // Function to toggle the layout
+  
   const handleLayoutToggle = () => {
     setIsGrid(!isGrid);
   };

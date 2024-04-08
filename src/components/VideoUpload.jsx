@@ -1,4 +1,4 @@
-// VideoUpload.jsx
+
 import React, { useState, useCallback } from "react";
 import { useDropzone } from "react-dropzone";
 import { useNavigate } from "react-router-dom";
@@ -22,7 +22,7 @@ const VideoUpload = () => {
   const handleNavigate = () => {
     if (uploadedVideo) {
       const videoUrl = URL.createObjectURL(uploadedVideo);
-      navigate(`/uploads?videoUrl=${encodeURIComponent(videoUrl)}`); // Pass videoUrl as URL parameter
+      navigate(`/uploads?videoUrl=${encodeURIComponent(videoUrl)}`);
     }
   };
 
